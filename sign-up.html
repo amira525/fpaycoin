@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fast Pay</title>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+        <link rel="stylesheet" href="css/slidercaptcha.min.css"/>
+        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="css/media.css" >
+    </head>
+    
+    <body>
+
+        <section class="sign-up">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="sign-up-logo d-flex align-items-center justify-content-center">
+                <div class="container text-center">
+                  <img src="image/fast_pay-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="sign-up-form">
+                    <div class="container">
+                      <div class="massage-error"></div>
+                        <h1>sign up</h1>
+                        <form class="row g-3 needs-validation" novalidate id="formvalidation">
+                            <div class="col-md-6">
+                              <label for="validationCustom01" class="form-label">FIRST NAME</label>
+                              <input type="text" name="fristname" class="form-control" id="validationCustom01" required="required">
+                              <span class="the-massage">
+                                Please provide a valid your frist name.
+                              </span>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="validationCustom02" class="form-label">Last name</label>
+                              <input type="text" name="lastname" class="form-control" id="validationCustom02" required="required">
+                              <span class="the-massage">
+                                Please provide a valid your last name.
+                              </span>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom03" class="form-label">USERNAME</label>
+                              <input type="text" name="username" class="form-control" id="validationCustom07" required="required">
+                              <span class="the-massage">
+                                Please provide a valid your email.
+                              </span>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom03" class="form-label">E-MAIL</label>
+                              <input type="email" name="email" class="form-control" id="validationCustom03" required="required">
+                              <span class="the-massage">
+                                Please provide a valid your email.
+                              </span>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom04" class="form-label">PHONE NUMBER</label>
+                                <input type="number" name="phone" class="form-control" id="validationCustom04" required="required">
+                                <span class="the-massage">
+                                  Please provide a valid your number.
+                                </span>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom05" class="form-label">PASSWORD</label>
+                                <input type="password" name="password" class="form-control" id="validationCustom05" required="required">
+                                <span class="the-massage">
+                                  Please provide a valid your password.
+                                </span>
+                            </div>
+                            <div class="col-md-12 confirm-password">
+                              <label for="validationCustom06" class="form-label">CONFIRM PASSWORD</label>
+                              <input type="password" name="confirmpassword" class="form-control" id="validationCustom06" required="required">
+                              <span class="the-massage-match" id="the-massage-match">
+                                not match <i class="fab-solid fas fa-exclamation"></i>
+                              </span>
+                            </div>
+                            <div class="col-12 sign-up-form-chesebox">
+                              <div class="chesebox-personal">
+                                <input type="checkbox" id="personal">
+                                <label for="personal">As a Personal</label>
+                              </div>
+                              <div class="chesebox-company">
+                                <input type="checkbox"  id="company">
+                                <label for="company">As a Company</label>
+                              </div>
+                            </div>
+                                <div class="sign-up-form-button text-center align-items-center align-self-center">
+                                  <button class="show-popup text-center align-items-center align-self-center" id="sign-up" data-popup=".popup">Sign up</button>
+                                </div>
+                            <span class="text-center alin-items-center">Already a member? <a href="sign-in.html">Sign in</a></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- start popup -->
+            <div class="popup sign-up-popup">
+              <div class="inner">
+                <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg></span>
+                <div class="slidercaptcha card">
+                    <div class="card-header">
+                      <span>Security Verification</span>
+                    </div>
+                    <div class="card-body">
+                      <div id="captcha"></div>
+                    </div>
+                  </div>                  
+              </div>
+            </div>
+            <!-- end popup -->
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		    <script src="js/jquery-1.x-git.min.js"></script>
+        <script src="js/longbow.slidercaptcha.min.js"></script>
+        <script src="js/custom.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fast Pay</title>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style-dashborde-user.css" >
+        <link rel="stylesheet" href="css/media.css" >
+    </head>
+    
+    <body>
+      <!-- start Setting -->
+
+      <section class="setting">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12">
+              <div class="profile-minu">
+                <div class="logo-img">
+                  <img src="image/fast_pay-logo.png" />
+                </div>
+                <div class="view-profile">
+                  <div class="display-image" id="img-profile"></div>
+                  <a href="./Account-Setting-user.html">View Profile</a>
+                  <h6>Enas Karim</h6>
+                  <div class="verify"></div>
+                  <ul>
+                    <li><a href="./overview-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                    </svg> Overview</a></li>
+                    <li><a href="./payment-method-user.html"><i class="far fa-credit-card"></i> Payment Method</a></li>
+                    <li><a href="./history-user.html"><i class="fas fa-history"></i> History</a></li>
+                    <li class="active"><a href="./setting-user.html"><i class="fas fa-cog"></i> Setting</a></li>
+                    <li><a href="./Ticket-Support-user.html"><i class="fas fa-headset"></i> Ticket Support</a></li>
+                  </ul>
+                  <hr>
+                  <ul>
+                    <li><a href="#"><i class="far fa-question-circle"></i> Help</a></li>
+                    <li class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="setting-screen">
+                <h4>Setting</h4>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Language
+                      </button>
+                      <span class="choose-language">English (United States)</span>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul class="language">
+                          <li>Spanish</li>
+                          <li>Australian Aboriginal</li>
+                          <li>Bulgarian</li>
+                          <li>french</li>
+                          <li>Arabic</li>
+                          <li>English (United States)</li>
+                          <li>Croatian</li>
+                          <li>Czech</li>
+                          <li>Finnish</li>
+                          <li>Swedish</li>
+                          <li>Swahili</li>
+                          <li>Lithuanian</li>
+                          <li>Germany</li>
+                          <li>Standard Chinese</li>
+                          <li>Greek</li>
+                          <li>Hungarian</li>
+                          <li>Icelandic</li>
+                          <li>Urdu</li>
+                          <li>Indian</li>
+                          <li>Indonesian</li>
+                          <li>Italian</li>
+                          <li>Japanese</li>
+                          <li>Russian</li>
+                          <li>Serbian</li>
+                          <li>Slovak</li>
+                          <li>Slovene</li>
+                          <li>Thai language</li>
+                          <li>Ukrainian</li>
+                          <li>Romanian</li>
+                          <li>Ireland</li>
+                          <li>Portuguese</li>
+                          <li>Polish</li>
+                          <li>Malay</li>
+                          <li>Dutch</li>
+                          <li>New Zealand</li>
+                          <li>Norwegian</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Current Currency
+                      </button>
+                      <span class="choose-current-currency">USD</span>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul class="current-currency">
+                          <li>USD</li>
+                          <li>CZK</li>
+                          <li>INR</li>
+                          <li>MXN</li>
+                          <li>RON</li>
+                          <li>ARS</li>
+                          <li>EUR</li>
+                          <li>IDR</li>
+                          <li>COP</li>
+                          <li>RUB</li>
+                          <li>ASD</li>
+                          <li>CNY</li>
+                          <li>JPY</li>
+                          <li>NZD</li>
+                          <li>RSD</li>
+                          <li>AUD</li>
+                          <li>HUF</li>
+                          <li>KES</li>
+                          <li>PKR</li>
+                          <li>THB</li>
+                          <li>CAD</li>
+                          <li>ISK</li>
+                          <li>LTL</li>
+                          <li>PEN</li>
+                          <li>UAH</li>
+                          <li>HRK</li>
+                          <li>NOK</li>
+                          <li>MYR</li>
+                          <li>PLN</li>
+                          <li>CLP</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Payment Process
+                      </button>
+                      <span class="choose-payment-process">Credit Card</span>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul class="payment-process">
+                          <li>Credit Card</li>
+                          <li><img src="image/user/MasterCard_early_1990s_logo.png" /></li>
+                          <li><img src="image/user/Visa_Logo.png" /></li>
+                          <li><img src="image/user/2560px-Apple_Pay_logo.svg (1).png" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form id="form">
+                  <label>Send your friends an invite email</label>
+                  <input id="form-tags-1" name="tags-1" type="text" value="jQuery,Script,Net" style="display: none;">
+                  <button class="show-tag">send Invites</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="bonuses">
+                <div class="bonuse-detals">
+                  <h5>Bonuses This Month</h5>
+                  <div class="bonuses-img">
+                    <img src="image/user/vecteezy_3d-background-gift-box-with-white-bow-display-product-for_ [Converted].png" />
+                  </div>
+                  <p>You have collected 10 points</p>
+                  <div class="potential-bonuse">
+                    <div class="percent-bonuse"></div>
+                    <span></span>
+                  </div>
+                  <span class="number-bonuse">POTENTIAL BONUS: $ 1 USD</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- end Setting -->
+        
+            
+        
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="js/jquery-1.x-git.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/setting-user.js"></script>
+        
+    </body>
+</html>

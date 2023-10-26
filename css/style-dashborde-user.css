@@ -1,0 +1,1414 @@
+/* start body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+/* width */
+select::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+select::-webkit-scrollbar-track {
+background: #E4E4E4;
+border-radius: 15px;
+}
+
+/* Handle */
+select::-webkit-scrollbar-thumb {
+background: #065EFF;
+border-radius: 15px;
+}
+
+/* Handle on hover */
+select::-webkit-scrollbar-thumb:hover {
+background: #065EFF;
+}
+
+/* start overview */
+.overview,
+.payment-method,
+.history{
+    font-family: Montserrat;
+}
+.profile-minu,
+.profile-minu{
+    padding: 30px 0px;
+    border-right: 1px solid #DDD;
+    height: 100%;
+}
+.profile-minu .logo-img,
+.profile-minu .logo-img{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-minu .logo-img img,
+.profile-minu .logo-img img{
+    width: 60%;
+}
+.profile-minu .view-profile,
+.profile-minu .view-profile{
+    text-align: center;
+}
+.profile-minu .view-profile .profile-img,
+.profile-minu .view-profile .profile-img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.profile-minu .view-profile .profile-img img,
+.profile-minu .view-profile .profile-img img{
+    height: 120px;
+    border-radius: 50%;
+    width: 120px;
+    text-align: center;
+}
+.profile-minu .view-profile a,
+.profile-minu .view-profile a{
+    font-size: 13px;
+}
+.profile-minu .view-profile h6,
+.profile-minu .view-profile h6{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.profile-minu .view-profile span,
+.profile-minu .view-profile span{
+    color: #159715;
+}
+.profile-minu .view-profile ul,
+.profile-minu .view-profile ul{
+    text-align: left;
+    list-style: none;
+    margin-top: 30px;
+}
+.profile-minu .view-profile ul li,
+.profile-minu .view-profile ul li{
+    display: block;
+    background: #FFF;
+    margin-bottom: 5px;
+    transition: all .3s ease-in-out;
+}
+.profile-minu .view-profile ul li.active,
+.profile-minu .view-profile ul li:hover,
+.profile-minu .view-profile ul li.active,
+.profile-minu .view-profile ul li:hover{
+    background: #D3F1FC;
+}
+.profile-minu .view-profile ul li a,
+.profile-minu .view-profile ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+    color: #707070;
+    display: block;
+    padding: 10px 0px 10px 10px;
+    transition: all .3s ease-in-out;
+}
+.profile-minu .view-profile ul li.active a,
+.profile-minu .view-profile ul li:hover a,
+.profile-minu .view-profile ul li.active a,
+.profile-minu .view-profile ul li:hover a{
+    border-right: 3px solid #065EFF;
+    color: #065eff;
+}
+.profile-minu .view-profile ul li i,
+.profile-minu .view-profile ul li i{
+    display: inline-block;
+    margin-right: 5px;
+}
+.profile-minu .view-profile hr,
+.profile-minu .view-profile hr{
+    color: #707070 ;
+}
+.overview .overview-screen{
+    padding: 30px 0px;
+}
+.overview .overview-screen .search{
+    text-align: right;
+    margin-bottom: 30px;
+    position: relative;
+}
+.overview .overview-screen .search form{
+    position: relative;
+    display: inline-block;
+}
+.overview .overview-screen .search form input{
+    border: 1px solid #DDD;
+    padding: 12px 30px;
+    border-radius: 30px;
+    outline: none;
+}
+.overview .overview-screen .search form span{
+    text-decoration: none;
+    font-weight: 300;
+    position: absolute;
+    right: calc(100% - 30px);
+    top: calc(50% - 10px);
+    color: #707070;
+}
+.overview .overview-screen .search a{
+    color: #707070;
+    text-decoration: none;
+    position: relative;
+    margin-left: 10px;
+}
+.overview .overview-screen .search a i.fa-bell{
+    font-size: 25px;
+    border: 1px solid #DDD;
+    border-radius: 50%;
+    padding: 12px;
+}
+.overview .overview-screen .search span.bell{
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    background: #F00;
+    color: #FFF;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+.overview .overview-screen .search .notification{
+    width: 500px;
+    position: absolute;
+    right: 20px;
+    top: calc(0);
+    border: 1px solid #DDD;
+    display: none;
+}
+.overview .overview-screen .search .history-list{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    text-align: left;
+}
+.overview .overview-screen .search .history-list .list-info{
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+.overview .overview-screen .search .history-list .list-info .list-img{
+    display: inline-flex;
+    align-items: center;
+}
+.overview .overview-screen .search .history-list .list-info .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+.overview .overview-screen .search .history-list .list-info .list-img .list-name{
+    display: inline-block;
+    margin-left: 20px;
+}
+.overview .overview-screen .search .history-list .list-info .list-name h6{
+    color: #43424B;
+    margin-bottom: 0px;
+}
+.overview .overview-screen .search .history-list .list-info .list-amount{
+    text-align: right;
+    display: inline;
+    float: right;
+    margin-top: 9px;
+}
+.overview .overview-screen .search .history-list .list-info .list-amount p{
+    color: #43424B;
+    margin-bottom: 0px;
+}
+.overview .overview-screen .search .history-list .list-info .list-amount span,
+.overview .overview-screen .search .history-list .list-info .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+.overview .overview-screen .total-balance h6{
+    color: #C1BFBF;
+}
+.overview .overview-screen .total-balance p{
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 30px;
+}
+.overview .overview-screen .total-balance span{
+    color: #C1BFBF;
+    font-size: 30px;
+    font-weight: 500;
+}
+.overview .overview-screen .transactions{
+    text-align: center;
+    font-family: Montserrat;
+}
+.overview .overview-screen .transactions .income select,
+.overview .overview-screen .transactions .expenses select{
+    color: #C1BFBF;
+    padding: 10px;
+    border: 1px solid #C1BFBF;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.overview .overview-screen .transactions .income select option,
+.overview .overview-screen .transactions .expenses select option{
+    padding: 5px;
+}
+.overview .overview-screen .transactions .income-mixup,
+.overview .overview-screen .transactions .expenses-mixup{
+    display: none;
+}
+.overview .overview-screen .transactions .monthly-income,
+.overview .overview-screen .transactions .monthly-expenses{
+    display: block;
+}
+.overview .overview-screen .transactions .income p,
+.overview .overview-screen .transactions .expenses p{
+    color: #707070;
+    font-size: 25px;
+    display: inline-block;
+}
+.overview .overview-screen .fiat{
+    text-align: center;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 6px 1px #e3e2e2;
+    margin-bottom: 30px;
+}
+.overview .overview-screen .fiat .coin{
+    /* display: none; */
+    padding: 0px 10px;
+}
+.overview .overview-screen .fiat .coin .col-2{
+    padding: 0px;
+}
+.overview .overview-screen .fiat .coin span{
+    display: inline-block;
+    /* padding: 5px; */
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #065EFF;
+    text-align: left;
+    width: 100%;
+}
+.overview .overview-screen .fiat .coin span img{
+    width: 15px;
+    height: 15px;
+}
+.overview .overview-screen .cryptocurrency{
+    text-align: center;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 25px 15px;
+    box-shadow: 0px 0px 6px 1px #e3e2e2;
+    margin-bottom: 30px;
+}
+.overview .overview-screen .cryptocurrency .cryptocurrency-img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.overview .overview-screen .cryptocurrency .cryptocurrency-img img{
+    display: inline-block;
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+}
+.overview .overview-screen .cryptocurrency a{
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #065EFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #065EFF;
+    background: #FFF;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-screen .cryptocurrency a:hover{
+    color: #FFF;
+    background: #065EFF;
+}
+.overview .overview-screen .portfolio-assets h4{
+    font-weight: bold;
+}
+.overview .overview-screen .portfolio-assets .portfolio-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.overview .overview-screen .portfolio-assets .portfolio-information .portfolio-information-img{
+    padding: 15px;
+    background: #E6E7F2;
+    border-radius: 15px;
+    display: inline-block;
+}
+.overview .overview-screen .portfolio-assets .portfolio-information .portfolio-information-img img{
+    width: 40px;
+    height: 40px;
+}
+.overview .overview-screen .portfolio-assets .portfolio-name{
+    display: inline-block;
+}
+.overview .overview-screen .portfolio-assets .portfolio-name h6{
+    font-weight: bold;
+}
+.overview .overview-screen .portfolio-assets .portfolio-name span{
+    color: #C1BFBF;
+    font-weight: 500;
+}
+.overview .overview-screen .portfolio-assets .portfolio-value,
+.overview .overview-screen .portfolio-assets .portfolio-information-income{
+    display: inline-block;
+    margin-top: 10px;
+}
+.overview .overview-screen .portfolio-assets .portfolio-value p,
+.overview .overview-screen .portfolio-assets .portfolio-information-income p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0px;
+}
+.overview .overview-screen .portfolio-assets .portfolio-value span,
+.overview .overview-screen .portfolio-assets .portfolio-information-income span{
+    color: #C1BFBF;
+}
+.overview .history{
+    padding: 30px 0px;
+}
+.overview .history .history-info{
+    background: #F9F8FD;
+    padding: 20px;
+    border-radius: 30px;
+}
+.overview .history h6{
+    display: inline-block;
+    text-align: left;
+}
+.overview .history a{
+    float: right;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+span.change{
+    display: inline-block;
+    color: #707070;
+    font-size: 25px;
+}
+/* end overview */
+/* start payment-method */
+.payment-method .payment-method-screen{
+    border-right: 1px solid #DDD;
+    margin: 50px 0px;
+    font-family: Montserrat;
+    height: 100vh;
+}
+.payment-method .payment-method-screen h4{
+    font-weight: bold;
+}
+.payment-method .payment-method-screen ul{
+    list-style: none;
+}
+.payment-method .payment-method-screen ul li{
+    display: inline-block;
+    width: 45px;
+    height: 33px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.payment-method .payment-method-screen ul li.one{
+    width: 90px;
+    padding: 2px;
+}
+.payment-method .payment-method-screen ul li img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #DDD;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ddd;
+}
+.payment-method .payment-method-screen ul li.active{
+    border: 1px solid #065EFF;
+    border-radius: 5px;
+}
+.payment-method .payment-method-screen ul li.active span{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #065EFF;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+}
+.payment-method .payment-method-screen form{
+    width: 80%;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.payment-method .payment-method-screen form .number-card{
+    position: relative;
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .number-card label,
+.payment-method .payment-method-screen form .name label,
+.payment-method .payment-method-screen form .expiration-date label,
+.payment-method .payment-method-screen form .cvv label{
+    color: #707070;
+    display: block;
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .number-card input,
+.payment-method .payment-method-screen form .name input,
+.payment-method .payment-method-screen form .expiration-date input,
+.payment-method .payment-method-screen form .cvv input,
+.payment-method .payment-method-screen form .payment-amount input{
+    background: #F5F7F9;
+    border: 1px solid #F5F7F9;
+    padding: 5px 50px 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #707070;
+}
+.payment-method .payment-method-screen form .cvv input,
+.payment-method .payment-method-screen form .expiration-date input{
+    padding: 7px 10px;
+    width: 100%;
+}
+.payment-method .payment-method-screen form .payment-amount input{
+    width: 40%;
+    padding: 5px 20px 5px 20px;
+    margin-right: 30px;
+}
+.payment-method .payment-method-screen form .number-card span{
+    position: absolute;
+    top: 60%;
+    right: calc(45% + 25px);
+    width: 40px;
+    font-size: 8px;
+}
+.payment-method .payment-method-screen form .number-card span img{
+    width: 100%;
+}
+.payment-method .payment-method-screen form .name{
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .payment-details{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.payment-method .payment-method-screen form .expiration-date{
+    margin-bottom: 10px;
+    width: 40%;
+    display: inline-block;
+}
+.payment-method .payment-method-screen form .cvv{
+    margin-bottom: 10px;
+    width: 20%;
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+.payment-method .payment-method-screen form .cvv span{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    color: #065EFF;
+}
+.payment-method .payment-method-screen form .payment-amount{
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .payment-amount select{
+    padding: 5px;
+    border-radius: 5px;
+    color: #707070;
+    border: 1px solid #DDD;
+}
+.payment-method .payment-method-screen form .payment-massage{
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .payment-massage span{
+    color: #707070;
+    font-size: 15px;
+}
+.payment-method .payment-method-screen form .payment-massage span i{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #065EFF;
+    color: #FFF;
+    border-radius: 50%;
+    margin: 0px 10px;
+    font-size: 10px;
+}
+.payment-method .payment-method-screen form .payment-massage span i:first-child{
+    margin-left: 0px;
+}
+.payment-method .payment-method-screen form .payment-massage span i:last-child{
+    opacity: 0.5;
+}
+.payment-method .payment-method-screen form .save-details{
+    margin-bottom: 10px;
+}
+.payment-method .payment-method-screen form .save-details input{
+    width: 25px;
+}
+.payment-method .payment-method-screen form .save-details label{
+    color: #707070;
+}
+.payment-method .payment-method-screen form .Confirm{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.payment-method .payment-method-screen form .confirm-button{
+    background: #065EFF;
+    border: 1px solid #065EFF;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 5px 30px;
+    margin-right: 30px;
+}
+.payment-method .payment-method-screen form .cancel-button{
+    background: #FFF;
+    border: 1px solid #065EFF;
+    border-radius: 10px;
+    color: #065EFF;
+    padding: 5px 30px;
+}
+.payment-method .cryptocurrency{
+    padding: 50px 0px;
+}
+.payment-method .cryptocurrency h6{
+    display: inline-block;
+}
+.payment-method .cryptocurrency h6 i{
+    color: #065EFF;
+}
+.payment-method .cryptocurrency ul{
+    list-style: none;
+    width: 80%;
+    margin-left: 70px;
+}
+.payment-method .cryptocurrency ul li{
+    display: inline-block;
+    width: 60px;
+    margin: 5px;
+}
+.payment-method .cryptocurrency ul li a img{
+    width: 100%;
+    border: 1px solid #DDD;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.payment-method .cryptocurrency ul li.active a{
+    position: relative;
+}
+.payment-method .cryptocurrency ul li.active a img{
+    border: 1px solid #065EFF;
+}
+.payment-method .cryptocurrency ul li.active a span{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #065EFF;
+    position: absolute;
+    right: -3px;
+    top: -14px;
+}
+.payment-method .cryptocurrency .qr-img{
+    text-align: center;
+    margin-top: 30px;
+}
+.payment-method .cryptocurrency .qr-img img{
+    width: 200px;
+    height: 200px;
+}
+/* end payment-method */
+/* start history*/
+.history .history-screen{
+    padding: 50px 0px;
+}
+.history .history-screen h4{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.history .history-screen .search{
+    width: 60%;
+}
+.history .history-screen .search form{
+    width: 100%;
+    position: relative;
+}
+.history .history-screen .search input{
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #DDD;
+    outline: none;
+    border-radius: 40px;
+}
+.history .history-screen .search span{
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    color: #707070;
+}
+.history .history-screen .history-form{
+    width: 100%;
+}
+.history .history-screen .history-form form{
+    width: 100%;
+    background: #F9F8FD;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.history .history-screen .history-form form .detalis-form,
+.history .history-screen .history-form form .detalis-to,
+.history .history-screen .history-form form .transaction,
+.history .history-screen .history-form form .credit,
+.history .history-screen .history-form form .debit,
+.history .history-screen .history-form form .show{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.history .history-screen .history-form form .credit,
+.history .history-screen .history-form form .debit{
+    width: 58px;
+}
+
+
+
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+  }
+  
+  input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+  input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+  
+  input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+  input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+
+
+
+
+
+
+.history .history-screen .history-form form .detalis-form label,
+.history .history-screen .history-form form .detalis-to label,
+.history .history-screen .history-form form .transaction label,
+.history .history-screen .history-form form .debit label,
+.history .history-screen .history-form form .credit label{
+    font-weight: bold;
+    font-size: 12px;
+}
+.history .history-screen .history-form form .detalis-form input,
+.history .history-screen .history-form form .detalis-to input{
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    color: #707070;
+    font-size: 12px;
+}
+.history .history-screen .history-form form .transaction select{
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    color: #707070;
+    font-size: 12px;
+    width: 140px;
+}
+.history .history-screen .history-form form .transaction select option{
+    padding: 10px;
+}
+.history .history-screen .history-form form .show button{
+    border: 1px solid #065EFF;
+    background: #065EFF;
+    padding: 5px 30px;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.history .history-screen .number-result{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.history .history-screen .number-result span{
+    font-size: 15px;
+    color: #707070;
+}
+.history .history-screen .number-result ul{
+    list-style: none;
+    display: inline-block;
+}
+.history .history-screen .number-result ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.history .history-screen .number-result ul li.select,
+.history .history-screen .number-result ul li:hover{
+    background: #065EFF;
+    border: 1px solid #065EFF;
+}
+.history .history-screen .number-result ul li.select a,
+.history .history-screen .number-result ul li:hover a{
+    color: #FFF;
+}
+.history .history-screen .number-result ul li a{
+    color: #707070;
+    text-decoration: none;
+}
+.history .history-screen .history-list{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 25px;
+}
+.history .history-screen .history-list .list-info .list-img{
+    display: inline-flex;
+    align-items: center;
+}
+.history .history-screen .history-list .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+.history .history-screen .history-list .list-name h6,
+.history .history-screen .history-list .list-name h6 span{
+    color: #43424B;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.history .history-screen .history-list .list-amount{
+    text-align: right;
+    display: inline;
+    float: right;
+    margin-top: 9px;
+}
+.history .history-screen .history-list .list-amount span,
+.history .history-screen .history-list .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+/* end history */
+/* start setting */
+.setting .setting-screen{
+    padding: 50px 0px;
+}
+.setting .setting-screen h4{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.setting .setting-screen .accordion{
+    background: #F9F8FD;
+    padding: 20px 20px 0px;
+    border-radius: 25px;
+    color: #707070;
+    margin-top: 30px;
+}
+.setting .setting-screen .accordion .accordion-item{
+    /* border-bottom: 1px solid #DDD; */
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    background: transparent;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-header .accordion-button{
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    padding-bottom: 0px;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-header .accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-header span{
+    font-size: 12px;
+    margin-left: 20px;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-header span img{
+    width: 10%;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-collapse ul{
+    margin-bottom: 0px;
+    list-style: none;
+    padding-left: 0px;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-collapse ul li{
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-collapse ul li:hover{
+    background: #065EFF;
+    color: #FFF;
+}
+.setting .setting-screen .accordion .accordion-item .accordion-collapse ul li img{
+    width: 50px;
+}
+.setting .setting-screen form{
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+.setting .setting-screen form label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.setting .setting-screen form .tagsinput{
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: 2px solid #DDD;
+    border-radius: 15px;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.setting .setting-screen form .tagsinput.focus {
+    border-color: #ccc;
+}
+.setting .setting-screen form .tagsinput .tag .tag-remove {
+    position: absolute;
+    background: 0 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: -5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    line-height: 30px;
+    padding: 0;
+    border: 0;
+}
+.setting .setting-screen form .tagsinput .tag .tag-remove:after,
+.setting .setting-screen form .tagsinput .tag .tag-remove:before {
+    background: #000;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 2px;
+    top: 14px;
+    left: 10px;
+    content: "";
+}
+.setting .setting-screen form .tagsinput .tag .tag-remove:before {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.setting .setting-screen form .tagsinput .tag .tag-remove:after {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+.setting .setting-screen form .tagsinput div {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.setting .setting-screen form .tagsinput div input {
+    background: 0 0;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px;
+    border: 0;
+    margin: 0 5px 5px 0;
+}
+.setting .setting-screen form .tagsinput div input.error {
+    color: #ff6b6b;
+}
+.setting .setting-screen form .tagsinput div input::-ms-clear {
+    display: none;
+}
+.setting .setting-screen form .tagsinput div input:-moz-placeholder,
+.setting .setting-screen form .tagsinput div input:-ms-input-placeholder,
+.setting .setting-screen form .tagsinput div input::-moz-placeholder,
+.setting .setting-screen form .tagsinput div input::-webkit-input-placeholder{
+    color: #ccc;
+    opacity: 1;
+}
+.setting .setting-screen form .tagsinput #form-tags-1_addTag{
+    display: inline-block;
+}
+.setting .setting-screen form .tag{
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    background: #C1BFBF;
+    color: #000;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0 5px 5px 0;
+}
+.setting .setting-screen form button{
+    background: #065EFF;
+    color: #FFF;
+    font-weight: 500;
+    padding: 13px 20px;
+    border: 1px solid #065EFF;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 14px);
+    height: calc(100% - 25px);
+}
+.setting .bonuses{
+    width: 100%;
+    padding: 100px 0px;
+}
+.setting .bonuses .bonuse-detals{
+    background: #F9F8FD;
+    padding: 100px 5px;
+    text-align: center;
+}
+.setting .bonuses .bonuse-detals h5{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.setting .bonuses .bonuse-detals .bonuses-img img{
+    width: 100%;
+}
+.setting .bonuses .bonuse-detals p{
+    color: #707070;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.setting .bonuses .bonuse-detals .potential-bonuse{
+    position: relative;
+}
+.setting .bonuses .bonuse-detals .potential-bonuse .percent-bonuse{
+    width: 90%;
+    background: #065EFF;
+    height: 10px;
+    border-radius: 5px;
+    opacity: 0.2;
+}
+.setting .bonuses .bonuse-detals .potential-bonuse span{
+    height: 10px;
+    width: 25%;
+    background: #065EFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    border-radius: 5px;
+    opacity: 1;
+}
+.setting .bonuses .bonuse-detals span.number-bonuse{
+    color: #707070;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    display: block;
+}
+/* end setting */
+/* start account-setting  */
+.account-setting .account-setting-screen{
+    padding: 50px 0px;
+}
+.account-setting .account-setting-screen h4{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.account-setting .account-setting-screen .id-profile{
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+}
+.account-setting .account-setting-screen .id-profile .profile-image{
+    position: relative;
+}
+#display-image,
+#img-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../image//photo_%D9%A2%D9%A0%D9%A2%D9%A2-%D9%A0%D9%A6-%D9%A0%D9%A7_%D9%A2%D9%A0-%D9%A5%D9%A1-%D9%A5%D9%A6.jpg');
+}
+.account-setting .account-setting-screen .id-profile .profile-image .up-load-img{
+    position: absolute;
+    top: 58%;
+    right: 42px;
+    cursor: pointer;
+}
+.account-setting .account-setting-screen .id-profile .profile-image .up-load-img input{
+    opacity: 0;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 10px;
+    border-radius: 50%;
+}
+.account-setting .account-setting-screen .id-profile .profile-image .up-load-img label{
+    cursor: pointer;
+}
+.account-setting .account-setting-screen .id-profile .profile-image .up-load-img label i{
+    background: #065EFF;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    right: 20px;
+    z-index: 0;
+}
+.account-setting .account-setting-screen .id-profile h4{
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.account-setting .account-setting-screen .id-profile span{
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+}
+.account-setting .account-setting-screen .id-profile p,
+.account-setting .account-setting-screen .id-profile p span{
+    color: #E80000;
+    font-weight: bold;
+}
+.account-setting .account-setting-screen .form-profile{
+    border-radius: 10px;
+    border: 1px solid #DDD;
+}
+.account-setting .account-setting-screen .form-profile ul{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    padding: 50px 30px 15px;
+}
+.account-setting .account-setting-screen .form-profile ul li{
+    display: inline-block;
+    margin-right: 25%;
+    font-weight: bold;
+    text-align: center;
+    color: #065EFF;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.account-setting .account-setting-screen .form-profile ul li.inactive{
+    color: #000;
+}
+.account-setting .account-setting-screen .form-profile ul li span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #DDD;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: -35px;
+    left: calc(50% - 20px);
+    transition: all .3s ease-in-out;
+}
+.account-setting .account-setting-screen .form-profile ul li.inactive span{
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #000;
+}
+.account-setting .account-setting-screen .form-profile ul li span,
+.account-setting .account-setting-screen .form-profile ul li:hover span{
+    border: 1px solid #065EFF;
+    background: #065EFF;
+    color: #FFF;
+}
+.account-setting .account-setting-screen .form-profile ul li:hover{
+    color: #065EFF;
+}
+.account-setting .account-setting-screen form{
+    display: block;
+}
+.account-setting .account-setting-screen form .form-items{
+    padding: 10px 30px;
+}
+.account-setting .account-setting-screen form .name,
+.account-setting .account-setting-screen form .email,
+.account-setting .account-setting-screen form .number-phone,
+.account-setting .account-setting-screen form .city,
+.account-setting .account-setting-screen form .country,
+.account-setting .account-setting-screen form .patcode,
+.account-setting .account-setting-screen form .street{
+    width: 49%;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.account-setting .account-setting-screen form .name label,
+.account-setting .account-setting-screen form .email label,
+.account-setting .account-setting-screen form .number-phone label,
+.account-setting .account-setting-screen form .city label,
+.account-setting .account-setting-screen form .country label,
+.account-setting .account-setting-screen form .patcode label,
+.account-setting .account-setting-screen form .street label,
+.account-setting .account-setting-screen form .birthday label,
+.account-setting .account-setting-screen form .nationality label{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+.account-setting .account-setting-screen form .name input,
+.account-setting .account-setting-screen form .email input,
+.account-setting .account-setting-screen form .number-phone input,
+.account-setting .account-setting-screen form .city input,
+.account-setting .account-setting-screen form .country input,
+.account-setting .account-setting-screen form .patcode input,
+.account-setting .account-setting-screen form .street input,
+.account-setting .account-setting-screen form .birthday input,
+.account-setting .account-setting-screen form .nationality input{
+    border-radius: 10px;
+    border: 0;
+    background: #F9F8FD;
+    padding: 10px 10px;
+    width: 95%;
+    outline: none;
+    color: #707070;
+    font-size: 12px;
+}
+.account-setting .account-setting-screen form .birthday,
+.account-setting .account-setting-screen form .nationality{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.account-setting .account-setting-screen form .change-pw{
+    border-top: 1px solid #DDD;
+    width: 100%;
+}
+.account-setting .account-setting-screen form .change-pw a{
+    display: inline-block;
+    width: 40%;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.account-setting .account-setting-screen form .button-profile{
+    padding: 10px 0px;
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+}
+.account-setting .account-setting-screen form .button-profile button{
+    background: #065EFF;
+    border: 1px solid #065EFF;
+    color: #FFF;
+    padding: 5px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.account-setting .account-setting-screen form .button-profile button:hover{
+    background-color: #FFF;
+    color: #065EFF;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form{
+    padding: 30px 30px 150px 30px;
+    display: none;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .img-verify{
+    display: inline-block;
+    text-align: right;
+    float: right;
+    position: relative;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .img-verify input{
+    opacity: 0;
+    width: 40px;
+    float: right;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .img-verify label{
+    position: absolute;
+    z-index: 0;
+    color: #065EFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .verified{
+    margin-bottom: 20px;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .verified span i{
+    color: #DDD;
+    margin-right: 5px;
+}
+.account-setting .account-setting-screen .form-profile .all-setting .verification-form .verified a{
+    float: right;
+    text-decoration: none;
+    color: #065EFF;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+/* end account-setting */
+
+/* start Ticket Support */
+.ticket-support .ticket-support-screen{
+    padding: 50px 0px;
+}
+.ticket-support .ticket-support-screen h4{
+    text-transform: capitalize;
+}
+.ticket-support .ticket-support-screen form{
+    margin-top: 20px;
+}
+.ticket-support .ticket-support-screen form .type-ticket,
+.ticket-support .ticket-support-screen form .the-problem,
+.ticket-support .ticket-support-screen form .update-file{
+    margin-bottom: 10px;
+}
+.ticket-support .ticket-support-screen form .type-ticket label,
+.ticket-support .ticket-support-screen form .the-problem label,
+.ticket-support .ticket-support-screen form .update-file label,
+.ticket-support .ticket-number form label{
+    display: block;
+    margin-bottom: 10px;
+    color: #707070;
+    font-weight: 500;
+}
+.ticket-support .ticket-support-screen form .type-ticket input,
+.ticket-support .ticket-number form input{
+    display: block;
+    width: 100%;
+    background: #F9F8FD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    color: #707070;
+}
+.ticket-support .ticket-support-screen form .the-problem textarea{
+    display: block;
+    width: 100%;
+    background: #F9F8FD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    color: #707070;
+    height: 200px;
+}
+.ticket-support .ticket-support-screen form .update-file .choose-file{
+    width: 100%;
+    background: #F9F8FD;
+    border: none;
+    padding: 30px 0px;
+    text-align: center;
+    border-radius: 10px;
+    color: #707070;
+    position: relative;
+}
+.ticket-support .ticket-support-screen form .update-file .choose-file span{
+    display: block;
+    margin: 5px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.ticket-support .ticket-support-screen form .update-file .choose-file input{
+    opacity: 0;
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.ticket-support .ticket-support-screen form .update-file .choose-file button{
+    position: absolute;
+    bottom: calc(0% + 30px);
+    left: calc(50% - 60px);
+    z-index: 0;
+    color: #FFF;
+    background: #065EFF;
+    padding: 5px 20px;
+    border: 1px solid #065EFF;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.ticket-support .ticket-support-screen form .submit-botton{
+    margin-top: 20px;
+    text-align: right;
+}
+.ticket-support .ticket-support-screen form .submit-botton button{
+    color: #FFF;
+    background: #065EFF;
+    padding: 5px 40px;
+    border: 1px solid #065EFF;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.ticket-support .ticket-support-screen .ticket-number form{
+    margin-bottom: 10px;
+}
+.ticket-support .ticket-support-screen .history-ticket h6{
+    margin-bottom: 10px;
+    color: #707070;
+    font-weight: 500;
+}
+.ticket-support .ticket-support-screen .history-ticket .history-detalis{
+    width: 100%;
+    background: #F9F8FD;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #707070;
+}
+.ticket-support .ticket-support-screen .history-ticket .history-detalis h6{
+    font-weight: 500;
+    color: #065EFF;
+}
+.ticket-support .ticket-support-screen .history-ticket .history-detalis span{
+    color: #21A84E;
+}
+/* end Ticket Support */

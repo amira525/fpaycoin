@@ -1,0 +1,84 @@
+@media (max-width:991px) {
+    .navbar .navbar-collapse .navbar-nav{
+        width: 50%;
+        float: right;
+        background: #FFF;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item{
+        border: 0;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active,
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+        background: #065eff;
+        color: #fff;
+    }
+    .Payment-Solutions .Payment-Solutions-section-img img,
+    .Product-Features .Product-Features-sectoin-img img{
+        width: 100%;
+    }
+    .Payment-Solutions .Payment-Solutions-section-info{
+        margin-top: 30px;
+    }
+    .Product-Features p,
+    .goals .goals-section-info p{
+        margin-bottom: 10px;;
+    }
+    .Product-Features a{
+        margin-top: 10px;
+    }
+.sign-up-logo .container,
+.sign-in .sign-in-logo{
+    height: 50vh;
+    position: relative;
+}
+.sign-up .sign-up-logo img,
+.sign-in .sign-in-logo img{
+    position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 120px);
+}
+.profile-minu .view-profile, .profile-minu .view-profile{
+    border-bottom: 2px solid #ddd;
+    margin: 0px 10px;
+}
+.account-setting .account-setting-screen .id-profile .profile-image .up-load-img{
+    right: calc(50% - 75px);
+}
+}
+
+@media (max-width: 575px) {
+    footer .footer-section-logo,
+    footer p,
+    footer .footer-section-icons{
+        text-align: center;
+
+    }
+    footer p{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    .Product-Features p,
+    .goals p,
+    .token p{
+        width: 100%;
+    }
+    .goals a{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar .navbar-collapse .navbar-nav,
+    .header-body p,
+    .Payment-Solutions p{
+        width: 100%;
+    }
+    .Payment-Solutions a{
+        margin-top: 0px;
+    }
+    .token p{
+        font-size: 18px;
+    }
+}

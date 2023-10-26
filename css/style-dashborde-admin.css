@@ -1,0 +1,1398 @@
+/* start body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+/* width */
+select::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+select::-webkit-scrollbar-track {
+background: #E4E4E4;
+border-radius: 15px;
+}
+
+/* Handle */
+select::-webkit-scrollbar-thumb {
+background: #065EFF;
+border-radius: 15px;
+}
+
+/* Handle on hover */
+select::-webkit-scrollbar-thumb:hover {
+background: #065EFF;
+}
+
+/* start overview */
+.overview,
+.payment-method,
+.history{
+    font-family: Montserrat;
+}
+.profile-minu,
+.profile-minu{
+    padding: 30px 0px;
+    border-right: 1px solid #DDD;
+    height: 100%;
+}
+.profile-minu .logo-img,
+.profile-minu .logo-img{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-minu .logo-img img,
+.profile-minu .logo-img img{
+    width: 60%;
+}
+.profile-minu .view-profile,
+.profile-minu .view-profile{
+    text-align: center;
+}
+.profile-minu .view-profile ul,
+.profile-minu .view-profile ul{
+    text-align: left;
+    list-style: none;
+    margin-top: 30px;
+}
+.profile-minu .view-profile ul li,
+.profile-minu .view-profile ul li{
+    display: block;
+    background: #FFF;
+    margin-bottom: 5px;
+    transition: all .3s ease-in-out;
+}
+.profile-minu .view-profile ul li.active,
+.profile-minu .view-profile ul li:hover,
+.profile-minu .view-profile ul li.active,
+.profile-minu .view-profile ul li:hover{
+    background: #D3F1FC;
+}
+.profile-minu .view-profile ul li a,
+.profile-minu .view-profile ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+    color: #707070;
+    display: block;
+    padding: 10px 0px 10px 10px;
+    transition: all .3s ease-in-out;
+}
+.profile-minu .view-profile ul li.active a,
+.profile-minu .view-profile ul li:hover a,
+.profile-minu .view-profile ul li.active a,
+.profile-minu .view-profile ul li:hover a{
+    border-right: 3px solid #065EFF;
+    color: #065eff;
+}
+.profile-minu .view-profile ul li i,
+.profile-minu .view-profile ul li svg{
+    display: inline-block;
+    margin-right: 5px;
+}
+.profile-minu .view-profile hr,
+.profile-minu .view-profile hr{
+    color: #707070 ;
+}
+.overview .overview-admin{
+    padding: 30px 0px;
+}
+.overview .overview-admin .search{
+    text-align: right;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.overview .overview-admin .search h6{
+    margin-left: 20px;
+}
+.overview .overview-admin .search form{
+    position: relative;
+    float: right;
+    margin-right: 50px;
+}
+.overview .overview-admin .search form input{
+    border: 1px solid #DDD;
+    padding: 12px 30px;
+    border-radius: 30px;
+    outline: none;
+}
+.overview .overview-admin .search form span{
+    text-decoration: none;
+    font-weight: 300;
+    position: absolute;
+    right: calc(100% - 30px);
+    top: calc(50% - 10px);
+    color: #707070;
+}
+.overview .overview-admin .search form a{
+    color: #707070;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.overview .overview-admin .search form a i.fa-bell{
+    font-size: 25px;
+    border: 1px solid #DDD;
+    border-radius: 50%;
+    padding: 12px;
+}
+.overview .overview-admin .overview-admin-screen .digital-wallet{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .digital-wallet h6{
+    display: block;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .digital-wallet span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 12px;
+    color: #707070;
+}
+.overview .overview-admin .overview-admin-screen .digital-wallet .digital-wallet-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .overview-admin-screen .digital-wallet .table-wallet-request tr td span{
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px;
+}
+.overview .overview-admin .digital-wallet .table-wallet-request tr td span.items-one{
+    color: #18B543;
+}
+.overview .overview-admin .digital-wallet .table-wallet-request tr td span.items-two{
+    color: #FF0606;
+}
+.overview .overview-admin .digital-wallet .table-wallet-request tr td span.items-three{
+    color: #F9B700;
+}
+.overview .overview-admin .overview-admin-screen .technical-support{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .technical-support h6{
+    display: block;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .technical-support span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 12px;
+    color: #707070;
+}
+.overview .overview-admin .overview-admin-screen .technical-support a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.overview .overview-admin .overview-admin-screen .technical-support .technical-support-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .overview-admin-screen .technical-support .technical-support-items span{
+    font-weight: 500;
+}
+.overview .overview-admin .overview-admin-screen .account-activation{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .account-activation h6{
+    display: block;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .account-activation span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 10px;
+    color: #707070;
+}
+.overview .overview-admin .overview-admin-screen .account-activation .account-activation-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .overview-admin-screen .account-activation .account-activation-items span{
+    font-weight: 500;
+}
+.overview .overview-admin .overview-admin-screen .account-activation .account-activation-items span img{
+    width: 20%;
+    border-radius: 50%;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered h6{
+    display: block;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 10px;
+    color: #707070;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered .newly-registered-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered .newly-registered-items span{
+    font-weight: 500;
+    width: 100%;
+}
+.overview .overview-admin .overview-admin-screen .newly-registered .newly-registered-items span img{
+    width: 20%;
+    border-radius: 50%;
+}
+.overview .overview-admin .overveiw-button{
+    text-align: center;
+    margin-top: 30px;
+}
+.overview .overview-admin .overveiw-button button{
+    border: 1px solid #065EFF;
+    background: #065EFF;
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .overveiw-button button a{
+    text-decoration: none;
+    color: #FFF;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .overveiw-button button:hover a{
+    color: #065EFF;
+}
+.overview .overview-admin .overveiw-button button:hover{
+    border: 1px solid #065EFF;
+    background: #FFF;
+    color: #065EFF;
+}
+/* end overview */
+
+/* start deactivate-popup */
+.deactivate-popup,
+.activate-popup,
+.popup-img,
+.block-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(91, 91, 91, 0.8);
+    display: none;
+}
+.popup .inner{
+    width: 500px;
+    height: 400px;
+    background: #FFF;
+    padding: 30px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -200px;
+}
+.popup .inner span.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 5;
+    cursor: pointer;
+}
+.popup .inner span.close svg{
+    font-weight: bold;
+    border: 2px solid #DDD;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #ddd;
+}
+.popup .inner .card{
+    border: none;
+    text-align: center;
+}
+.popup .inner .card .card-header{
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup .inner .card .card-header h1{
+    font-weight: bold;
+    color: #707070;
+}
+.popup .inner .card .card-header h1 svg{
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 5px solid #FF0606;
+    border-radius: 50%;
+    color: #FF0606;
+}
+.popup .inner .card .card-header h1 i{
+    font-weight: bold;
+    width: 100px;
+    color: #18B543;
+}
+.popup .inner .card .card-body h5{
+    color: #065EFF;
+    font-weight: bold;
+}
+.popup .inner .card .card-body.card-number h3{
+    text-align: center;
+    position: fixed;
+    top: 47%;
+    left: 47%;
+}
+.popup .inner .card .card-body span{
+    font-size: 9px;
+    color: #707070;
+    display: block;
+}
+.popup .inner .card .card-body a{
+    text-decoration: none;
+    color: #FFF;
+    background: #065EFF;
+    border: 1px solid #065EFF;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    padding: 5px 30px;
+    margin-top: 30px;
+}
+.popup .inner .card .card-body a:hover{
+    background: #FFF;
+    color: #065EFF;
+}
+/* end deactivate-popup */
+/* start popup-img */
+.popup-img .inner .card-body img{
+    width: 80%;
+}
+/* end popup-img */
+
+/* start block popup */
+.block-popup .inner .card .card-header h1 i{
+    font-size: 100px;
+    color: #FF0606;
+}
+.block-popup .inner .card .card-body span{
+    font-size: 12px;
+}
+/* end  block popup */
+
+/* start digital-wallet */
+.overview .digital-wallet{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .digital-wallet span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 12px;
+    color: #707070;
+}
+.overview .digital-wallet .digital-wallet-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .digital-wallet .digital-wallet-items span{
+    font-weight: 500;
+    cursor: pointer;
+}
+.overview .digital-wallet .digital-wallet-items span.items-one{
+    color: #18B543;
+}
+.overview .digital-wallet .digital-wallet-items span.items-two{
+    color: #FF0606;
+}
+.overview .digital-wallet .digital-wallet-items span.items-three{
+    color: #F9B700;
+}
+/* end digital-wallet */
+
+/* start Technical support tickets */
+.overview .overview-admin .technical-support{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .technical-support span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 12px;
+    color: #707070;
+}
+.overview .overview-admin .technical-support a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.overview .overview-admin .technical-support .technical-support-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .technical-support .technical-support-items span{
+    font-weight: 500;
+}
+/* end Technical support tickets */
+
+/* start Account activation requests */
+.overview .overview-admin .account-activation{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .account-activation span{
+    width: 100%;
+    font-weight: bold;
+    color: #707070;
+}
+.overview .overview-admin .account-activation a{
+    text-decoration: none;
+}
+.overview .overview-admin .account-activation .account-activation-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .account-activation .account-activation-items span{
+    font-weight: 500;
+}
+.overview .overview-admin .account-activation .account-activation-items span img{
+    width: 20%;
+    border-radius: 50%;
+}
+/* end Account activation requests/ */
+
+/* start Newly registered accounts */
+.overview .overview-admin .newly-registered{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.overview .overview-admin .newly-registered span{
+    width: 100%;
+    font-weight: bold;
+    color: #707070;
+}
+.overview .overview-admin .newly-registered .newly-registered-items{
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .newly-registered .newly-registered-items span{
+    font-weight: 500;
+    width: 100%;
+}
+.overview .overview-admin .newly-registered .newly-registered-items span img{
+    width: 20%;
+    border-radius: 50%;
+}
+/* end Newly registered accounts */
+
+/* start history*/
+.overview .overview-admin h6{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.overview .overview-admin .block-accounts-screen .history-list,
+.overview .overview-admin .account-management-screen .history-list{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 25px;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info,
+.overview .overview-admin .account-management-screen .history-list .list-info{
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info .list-img,
+.overview .overview-admin .account-management-screen .history-list .list-info .list-img{
+    display: inline-flex;
+    align-items: center;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info .list-img img,
+.overview .overview-admin .account-management-screen .history-list .list-info .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info .list-img .list-name,
+.overview .overview-admin .account-management-screen .history-list .list-info .list-img .list-name{
+    display: inline-block;
+    margin-left: 20px;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info .list-name h6,
+.overview .overview-admin .account-management-screen .history-list .list-info .list-name h6{
+    color: #43424B;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.overview .overview-admin .block-accounts-screen .history-list .list-info .list-name span,
+.overview .overview-admin .account-management-screen .history-list .list-info .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+.overview .overview-admin .activate-new-admin{
+    padding: 30px 20px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+.overview .overview-admin .activate-new-admin h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+.overview .overview-admin .activate-new-admin form .name-admin,
+.overview .overview-admin .activate-new-admin form .username-admin,
+.overview .overview-admin .activate-new-admin form .password-admin{
+    margin-bottom: 10px;
+}
+.overview .overview-admin .activate-new-admin form .name-admin label,
+.overview .overview-admin .activate-new-admin form .username-admin label,
+.overview .overview-admin .activate-new-admin form .password-admin label{
+    display: block;
+    color: #707070;
+    font-weight: bold;
+    font-size: 14px;
+}
+.overview .overview-admin .activate-new-admin form .name-admin input,
+.overview .overview-admin .activate-new-admin form .username-admin input,
+.overview .overview-admin .activate-new-admin form .password-admin input{
+    color: #707070;
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    outline: none;
+}
+.overview .overview-admin .activate-new-admin form .access label{
+    color: #707070;
+    font-weight: bold;
+    font-size: 14px;
+}
+.overview .overview-admin .activate-new-admin form .access .access-items{
+    text-align: left;
+    margin-left: calc(25%);
+    margin-bottom: 10px;
+}
+.overview .overview-admin .activate-new-admin form .access .access-items input{
+    width: 15px;
+    height: 15px;
+}
+.overview .overview-admin .activate-new-admin form .access .access-items label{
+    color: #000;
+    font-weight: 400;
+}
+.overview .overview-admin .activate-new-admin form .create{
+    text-align: center;
+    margin-top: 20px;
+}
+.overview .overview-admin .activate-new-admin form .create button{
+    border: 1px solid #DDD;
+    color: #707070;
+    padding: 3px 15px;
+    font-size: 500;
+    background: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .activate-new-admin form .create button.active,
+.overview .overview-admin .activate-new-admin form .create button:hover{
+    color: #065EFF;
+    border: 1px solid #065EFF;
+}
+.overview .overview-admin .activate-new-admin form .create button:first-child{
+    margin-right: 30px;
+    display: inline-block;
+}
+/* end history */
+
+/* start Admin Management Verifications */
+.overview .overview-admin .admin-verifications-screen .admin-verifications{
+    border: 1px solid #DDD;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items{
+    border-radius: 15px;
+    box-shadow: 2px 1px 10px 10px #f2f7ff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items span{
+    font-weight: 500;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items ul{
+    list-style: none;
+    text-align: right;
+    margin-top: 20px;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items ul li,
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items form button{
+    display: inline-block;
+    border: 1px solid #065EFF;
+    background: #FFF;
+    color: #065EFF;
+    padding: 3px 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items ul li:hover,
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items form button:hover{
+    background: #065EFF;
+    color: #FFF;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items form{
+    text-align: center;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items form textarea{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #DDD;
+    border-radius: 15px;
+    padding: 20px;
+    outline: none;
+}
+.overview .overview-admin .admin-verifications-screen .admin-verifications .admin-verifications-items form .notes-links{
+    margin-top: 20px;
+    width: 470px;
+}
+/* end Admin Management Verifications */
+
+/* start The Tickets */
+.overview .overview-admin .tickets-admin-screen .form-ticket label{
+    display: block;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.overview .overview-admin .tickets-admin-screen .form-ticket textarea{
+    
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    background: #F9F8FD;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.overview .overview-admin .tickets-admin-screen .form-ticket button{
+    float: right;
+    background: #065EFF;
+    color: #FFF;
+    font-weight: 500;
+    padding: 3px 30px;
+    border: 1px solid #065EFF;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .tickets-admin-screen .form-ticket button:hover{
+    background: #FFF;
+    color: #065EFF;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket{
+    margin-bottom: 50px;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info{
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px 10px #f2f7ff;
+    padding: 30px 20px;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .number-ticket,
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .data-ticket{
+    text-align: right;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .number-ticket span,
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .problem-ticket span,
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .type-ticket span{
+    color: #707070;
+    font-weight: 500;
+    font-size: 14px;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .number-ticket span p,
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .type-ticket span p{
+    display: inline-block;
+    color: #000;
+    font-weight: 400;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .type-ticket,
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .problem-ticket{
+    text-align: left;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .problem-ticket span p{
+    color: #000;
+    font-weight: 400;
+}
+.overview .overview-admin .tickets-admin-screen .detalis-ticket .ticket-info .data-ticket span{
+    color: #707070;
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.overview .overview-admin .tickets-admin-screen .history-ticket h6{
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.overview .overview-admin .tickets-admin-screen .history-ticket .history-detalis{
+    width: 100%;
+    background: #F9F8FD;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #707070;
+}
+.overview .overview-admin .tickets-admin-screen .history-ticket .history-detalis h6{
+    font-weight: 500;
+    color: #065EFF;
+    margin-left: 0px;
+}
+.overview .overview-admin .tickets-admin-screen .history-ticket .history-detalis span{
+    color: #21A84E;
+}
+/* end The Tickets */
+
+/* start deposit-history */
+.overview .overview-admin h5{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.overview .overview-admin .account-management-screen .table-history{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+.overview .overview-admin .deposit-history-screen .history-list{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 25px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td {
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-img,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-img{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-img .list-name,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-img .list-name{
+    display: inline-block;
+    margin-left: 20px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-name p,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-img .list-name p{
+    color: #43424B;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-name span,
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-amount span,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-img .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-amount,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-amount{
+    text-align: right;
+    display: inline;
+    float: right;
+    margin-top: 9px;
+}
+.overview .overview-admin .deposit-history-screen .history-list .table-history .data-history tr td .list-amount p,
+.overview .overview-admin .account-management-screen .table-history .data-history tr td .list-amount p{
+    color: #43424B;
+    margin-bottom: 0px;
+}
+/* end deposit-history */
+
+/* start Admin Management  Users */
+.overview .overview-admin .admin-users-screen h5,
+.overview .overview-admin .admin-screen h5{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.overview .overview-admin .table-account-activation thead tr span,
+.overview .overview-admin .table-newly thead tr span,
+.overview .overview-admin .admin-users-screen .table-users thead tr span{
+    color: #707070;
+}
+.table>:not(caption)>*>*{
+    padding: 12px 0px;
+}
+.overview .overview-admin .admin-users-screen tbody,
+.overview .overview-admin .table-admins-account{
+    position: relative;
+}
+.table>:not(:first-child),
+.overview .overview-admin .admin-users-screen  tr,
+.overview .overview-admin .block-accounts-screen  tr,
+.overview .overview-admin .table-newly thead,
+.overview .overview-admin .table-account-activation thead{
+    border: 0 none transparent;
+}
+.overview .overview-admin .table-newly thead,
+.overview .overview-admin .table-account-activation thead,
+.overview .overview-admin .admin-users-screen .table-users thead{
+    padding-bottom: 20px;
+}
+.overview .overview-admin .table-newly,
+.overview .overview-admin .table-account-activation,
+.overview .overview-admin .admin-users-screen .table-users,
+.overview .overview-admin .block-accounts-screen  .list-block{
+    vertical-align: middle;
+}
+.overview .overview-admin .table-newly tbody tr td:first-child,
+.overview .overview-admin .table-account-activation tbody tr td:first-child{
+    padding-left: 10px;
+}
+.overview .overview-admin .table-newly tbody tr,
+.overview .overview-admin .table-admins-account tr,
+.overview .overview-admin .table-account-activation tbody tr,
+.overview .overview-admin .admin-users-screen .table-users tbody tr,
+.overview .overview-admin .admin-screen tr,
+.overview .overview-admin .profile-users-screen tr{
+    position: relative;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-shadow: 2px 5px 10px 5px #f2f7ff;
+}
+.overview .overview-admin .admin-screen{
+    opacity: 0.5;
+}
+.overview .overview-admin .admin-users-screen form{
+    height: 100%;
+    padding-left: 10px;
+}
+.overview .overview-admin .admin-users-screen form input{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.overview .overview-admin .admin-users-screen form label.active,
+.overview .overview-admin .profile-users-screen span.active{
+    background: #18B543;
+    color: #FFF;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen form label.down,
+.overview .overview-admin .profile-users-screen span.down{
+    background: #FF0606;
+    color: #FFF;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen form label.pending,
+.overview .overview-admin .profile-users-screen span.pending{
+    background: #F9B700;
+    color: #FFF;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen .user-account,
+.overview .overview-admin .table-account-activation .user-account,
+.overview .overview-admin .table-newly .user-account{
+    width: 100%;
+}
+.overview .overview-admin .table-account-activation .user-account .account-img,
+.overview .overview-admin .table-newly .user-account .account-img,
+.overview .overview-admin .admin-users-screen .user-account .account-img,
+.overview .overview-admin .admin-screen .user-account .frist-letters{
+    width: 15%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.overview .overview-admin  .table-account-activation .user-account .account-img img,
+.overview .overview-admin  .table-newly .user-account .account-img img,
+.overview .overview-admin .admin-users-screen .user-account .account-img img,
+.overview .overview-admin .admin-screen .user-account .frist-letters img{
+    width: 100%;
+    border-radius: 50%;
+}
+.overview .overview-admin .admin-screen .user-account .frist-letters span{
+    padding: 15px;
+    line-height: 15px;
+    background: #065EFF;
+    color: #FFF;
+    border: 1px solid #065EFF;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.overview .overview-admin .table-account-activation .table-activation .user-account .account-name,
+.overview .overview-admin .table-newly .table-newly-registered .user-account .account-name,
+.overview .overview-admin .admin-users-screen .user-account .account-name,
+.overview .overview-admin .admin-screen .user-account .account-name{
+    display: inline-block;
+}
+.overview .overview-admin .admin-users-screen .user-account .account-name span,
+.overview .overview-admin .table-account-activation .user-account .account-name span,
+.overview .overview-admin .table-newly .user-account .account-name span{
+    font-size: 12px;
+    color: #707070;
+}
+.overview .overview-admin tr td span,
+.overview .overview-admin .admin-users-screen .account-email span,
+.overview .overview-admin .table-account-activation .account-email span,
+.overview .overview-admin .table-newly .account-email span{
+    color: #707070;
+}
+.overview .overview-admin .admin-screen .hour-work span{
+    color: #065EFF;
+    font-weight: bold;
+}
+.overview .overview-admin .admin-users-screen .btn-group,
+.overview .overview-admin .admin-screen .action,
+.overview .overview-admin .profile-users-screen .action{
+    text-align: center;
+    padding-right: 10px;
+}
+.overview .overview-admin .admin-users-screen .btn-group button,
+.overview .overview-admin .admin-screen .action span,
+.overview .overview-admin .profile-users-screen .action span{
+    cursor: pointer;
+    color: #707070;
+    background: transparent;
+    border: 0;
+}
+.overview .overview-admin .admin-screen .minu-action,
+.overview .overview-admin .profile-users-screen .minu-action{
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    width: 150px;
+    position: absolute;
+    right: -5px;
+    top: 40px;
+    display: none;
+    z-index: 2;
+}
+.dropdown-menu{
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen .dropdown-menu ul,
+.overview .overview-admin .admin-screen .minu-action ul,
+.overview .overview-admin .profile-users-screen .minu-action ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen .dropdown-menu ul li,
+.overview .overview-admin .admin-screen .minu-action ul li,
+.overview .overview-admin .profile-users-screen .minu-action ul li{
+    padding: 5px 5px;
+    background: #FFF;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .admin-users-screen .dropdown-menu ul li:hover,
+.overview .overview-admin .admin-screen .minu-action ul li:hover,
+.overview .overview-admin .profile-users-screen .minu-action ul li:hover{
+    background: #065EFF;
+}
+.overview .overview-admin .admin-users-screen .dropdown-menu ul li:hover a,
+.overview .overview-admin .admin-screen .minu-action ul li:hover a,
+.overview .overview-admin .profile-users-screen .minu-action ul li:hover a{
+    color: #FFF;
+}
+.overview .overview-admin .admin-users-screen .dropdown-menu ul li a,
+.overview .overview-admin .admin-screen .minu-action ul li a,
+.overview .overview-admin .profile-users-screen .minu-action ul li a{
+    text-decoration: none;
+    color: #707070;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: transparent;
+    border: 0;
+};
+.overview .overview-admin .admin-users-screen .number-user,
+.overview .overview-admin .admin-screen .number-user{
+    width: 100%;
+    text-align: left;
+    color: #707070;
+    font-size: 12px;
+    font-weight: bold;
+}
+.overview .overview-admin .admin-users-screen .overveiw-button,
+.overview .overview-admin .admin-screen .overveiw-button{
+    width: 100%;
+    text-align: center;
+}
+.overview .overview-admin .admin-users-screen .overveiw-button button,
+.overview .overview-admin .admin-screen .overveiw-button button{
+    border: 1px solid #065EFF;
+    background: #065EFF;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .admin-users-screen .overveiw-button button:hover,
+.overview .overview-admin .admin-screen .overveiw-button button:hover{
+    background: #FFF;
+    color: #065EFF;
+}
+/* end Admin Management  Users */
+
+/* start View Profile  Users */
+.overview .overview-admin .profile-users-screen .view-profile-user{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .image-profile{
+    margin-bottom: 20px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .image-profile img{
+    border-radius: 50%;
+    width: 120px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .profile-info{
+    color: #707070;
+    margin-bottom: 10px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .profile-info h5{
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .profile-info span{
+    font-size: 10px;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .block-account button{
+    background: #065EFF;
+    border: 1px solid #065EFF;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .profile-users-screen .view-profile-user .block-account button:hover{
+    background: #FFF;
+    color: #065EFF;
+}
+.overview .overview-admin .profile-users-screen span{
+    width: 100%;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* end View Profile  Users */
+
+/* start block-accounts */
+.overview .overview-admin h5{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.overview .overview-admin .block-accounts-screen  .block-tr td{
+    padding: 12px 50px;
+}
+.overview .overview-admin .block-accounts-screen  .list-block{
+    padding: 20px 0px;
+    display: inline-block;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .block-img{
+    display: inline-flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .block-img img{
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .list-name{
+    display: inline-block;
+    margin-top: calc(50% - 40px);
+}
+.overview .overview-admin .block-accounts-screen  .list-block .list-name h6{
+    color: #43424B;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .block-button{
+    display: inline-block;
+    margin-bottom: calc(50% - 40px);
+}
+.overview .overview-admin .block-accounts-screen  .list-block .block-button button{
+    text-decoration: none;
+    color: #000;
+    background: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 7px 25px;
+    transition: all .3s ease-in-out;
+}
+.overview .overview-admin .block-accounts-screen  .list-block .block-button button:hover{
+    color: #FFF;
+    background-color: #065EFF;
+    border: 1px solid #065EFF;
+}
+/* end block-accounts */
+
+/* start sign-in-admin */
+section.sign-in-admin{
+    background: url(../image/Group\ 438.png);
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.sign-in-admin .sign-in-form{
+    background-color: #FFF;
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+}
+.sign-in-admin .sign-in-form form .username,
+.sign-in-admin .sign-in-form form .password{
+    margin-bottom: 20px;
+}
+.sign-in-admin .sign-in-form form .username label,
+.sign-in-admin .sign-in-form form .password label{
+    display: block;
+    color: #065EFF;
+    margin-bottom: 10px;
+}
+.sign-in-admin .sign-in-form form .username input,
+.sign-in-admin .sign-in-form form .password input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    color: #707070;
+    outline: none;
+}
+.sign-in-admin .sign-in-form form .choose{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.sign-in-admin .sign-in-form form .choose .admin{
+    display: inline;
+    float: left;
+}
+.sign-in-admin .sign-in-form form .choose .company{
+    display: inline;
+    float: right;
+}
+.sign-in-admin .sign-in-form form .choose .admin input,
+.sign-in-admin .sign-in-form form .choose .company input{
+    width: 15px;
+    height: 15px;
+}
+.sign-in-admin .sign-in-form form .choose .admin label,
+.sign-in-admin .sign-in-form form .choose .company label{
+    display: inline-block; 
+    margin-left: 5px;
+    color: #065EFF;
+    font-weight: 500;
+}
+.sign-in-admin .sign-in-form form .sign-in-button{
+    text-align: center;
+}
+.sign-in-admin .sign-in-form form .sign-in-button button{
+    background: #065EFF;
+    color: #FFF;
+    padding: 10px 60px;
+    border: 1px solid #065EFF;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.sign-in-admin .sign-in-form form .sign-in-button button:hover{
+    background: #FFF;
+    color: #065EFF;
+}
+/* end sign-in-admin */
+
+/* start history new admin*/
+.overview .overview-admin h6{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.overview .overview-admin .history-new-admin-screen .history-list{
+    background: #F9F8FD;
+    padding: 0px 20px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 25px;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info{
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDD;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info .list-img{
+    display: inline-flex;
+    align-items: center;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info .list-img img{
+    background: #E6E7F2;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info .list-img .list-name{
+    display: inline-block;
+    margin-left: 20px;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info .list-name h6{
+    color: #43424B;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.overview .overview-admin .history-new-admin-screen .history-list .list-info .list-name span{
+    font-size: 12px;
+    color: #A6A9B7;
+}
+/* end history new admin */
+
+
+
+
+
+
+
+
+
+
+

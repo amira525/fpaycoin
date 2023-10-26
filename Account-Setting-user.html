@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fast Pay</title>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style-dashborde-user.css" >
+        <link rel="stylesheet" href="css/media.css" >
+    </head>
+    
+    <body>
+      <!-- start Account Setting -->
+
+      <section class="account-setting">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <div class="profile-minu">
+                <div class="logo-img">
+                  <img src="image/fast_pay-logo.png" />
+                </div>
+                <div class="view-profile">
+                  <div class="display-image" id="img-profile"></div>
+                  <a href="./Account-Setting-user.html">View Profile</a>
+                  <h6>Enas Karim</h6>
+                  <div class="verify"></div>
+                  <ul>
+                    <li><a href="./overview-user.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                    </svg> Overview</a></li>
+                    <li><a href="./payment-method-user.html"><i class="far fa-credit-card"></i> Payment Method</a></li>
+                    <li><a href="./history-user.html"><i class="fas fa-history"></i> History</a></li>
+                    <li><a href="./setting-user.html"><i class="fas fa-cog"></i> Setting</a></li>
+                    <li class="active"><a href="./Ticket-Support-user.html"><i class="fas fa-headset"></i> Ticket Support</a></li>
+                  </ul>
+                  <hr>
+                  <ul>
+                    <li><a href="#"><i class="far fa-question-circle"></i> Help</a></li>
+                    <li class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="account-setting-screen">
+                <h4>Profile</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="id-profile">
+                      <div class="profile-image">
+                        <div id="display-image"></div>
+                        <div class="up-load-img">
+                          <input id="image-input" type="file" accept="image/*" onChange="uploadFileImg()"/>
+                          <label for="input-upload"><i class="fab-solid fas fa-camera"></i></label>
+                        </div>
+                      </div>
+                      <h4 class="user-name"></h4>
+                      <span class="user-theemail"></span>
+                      <p>ID :<span id="user-id"> </span></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <div class="form-profile">
+                      <ul id="tabs">
+                        <li  id="account-setting-form"><span>1</span>Account Setting</li>
+                        <li class="inactive" id="verification-form"><span>2</span>Verifications</li>
+                      </ul>
+                      <div class="all-setting">
+                        <div class="account-setting-form" id="account-setting-form-content">
+                          <form>
+                            <div class="form-items">
+                              <div class="name">
+                                <label>First Name</label>
+                                <input id="frist-n" type="text"  required="required" class="account-setting-input" />
+                              </div>
+                              <div class="name">
+                                <label>Last Name</label>
+                                <input id="last-n" type="text" required="required" class="account-setting-input" />
+                              </div>
+                              <div class="email">
+                                <label>E-mail</label>
+                                <input id="email-user" type="email"  required="required" class="account-setting-input" />
+                              </div>
+                              <div class="number-phone">
+                                <label>Phone Number</label>
+                                <input id="phonenum" type="number"  required="required" class="account-setting-input" />
+                              </div>
+                              <div class="city">
+                                <label>City</label>
+                                <input id="city" type="text" required="required" class="account-setting-input" />
+                              </div>
+                              <div class="country">
+                                <label>State/Country</label>
+                                <input id="country" type="text" required="required" class="account-setting-input" />
+                              </div>
+                              <div class="patcode">
+                                <label>Pstcode</label>
+                                <input id="patcode" type="text" required="required" class="account-setting-input" />
+                              </div>
+                              <div class="street">
+                                <label>Street</label>
+                                <input id="street" type="text" required="required" class="account-setting-input" />
+                              </div>
+                              <div class="birthday">
+                                <label>Birthday</label>
+                                <input id="birthday" type="date" class="account-setting-input" />
+                              </div>
+                              <div class="nationality">
+                                <label>Nationality</label>
+                                <input id="nationality" type="text"  class="account-setting-input" />
+                              </div>
+                            </div>
+                            <div class="change-pw">
+                              <a href="change-user-profile.html">Change Password?</a>
+                              <div class="button-profile">
+                              <button id="updata-button">Update</button>
+                              </div>
+                            </div>
+                            <div class="massage-error"></div>
+                          </form>
+                        </div>
+                        <div class="verification-form" id="verification-form-content">
+                          <div class="verified">
+                            <span><i class="fab-regular fas fa-user"></i> Identity Verified</span>
+                            <div class="img-verify">
+                              <input id="image-verify-input" type="file" accept="image/*" onChange="uploadFileImg()"/>
+                              <label for="input-upload">Verify</label>
+                            </div>
+                          </div>
+                          <div class="verified">
+                            <span><i class="fab-regular fas fa-phone"></i> Phone Verified</span>
+                            <a href="#">Verifed</a>
+                          </div>
+                          <div class="verified">
+                            <span><i class="fab-solid fas fa-camera"></i> Picture Verified</span>
+                            <a href="#">Verify by Camera</a>
+                          </div>
+                          <div class="verified">
+                            <span><i class="fab-regular fas fa-user"></i> Profile Verified</span>
+                            <a href="#">Verify</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- end Setting -->
+        
+            
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		    <script src="js/jquery-1.x-git.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="js/user-profile.js"></script>
+        
+    </body>
+</html>

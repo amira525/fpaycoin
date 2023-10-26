@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fast Pay</title>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style-dashborde-admin.css" >
+        <link rel="stylesheet" href="css/media.css" >
+    </head>
+    
+    <body>
+      <!-- start overview -->
+
+      <section class="overview">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <div class="profile-minu">
+                <div class="logo-img">
+                  <img src="image/fast_pay-logo.png" />
+                </div>
+                <div class="view-profile">
+                  <ul>
+                    <li class="active"><a href="./overview-admin.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                      <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                    </svg> Overview</a></li>
+                    <li><a href="./account-management.html"><i class="fas fa-user-cog"></i> Account Management</a></li>
+                    <li><a href="./activate-accounts.html"><i class="fa-solid fas fa-power-off"></i> Activate Accounts</a></li>
+                    <li><a href="./the-tickets.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                      <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                    </svg> The Tickets</a></li>
+                    <li><a href="./deposit-history.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-3 8A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1z"/>
+                    </svg> Deposit History</a></li>
+                    <li><a href="./users.html"><i class="fas-solid far fa-user"></i> Users</a></li>
+                    <li><a href="./blocked-accounts.html"><i class="fas-solid fas fa-ban"></i> Blocked Accounts</a></li>
+                    <li><a href="./admins.html"><i class="fas-solid far fa-user"></i> Admins</a></li>
+                  </ul>
+                  <hr>
+                  <ul>
+                    <li><a href="#"><i class="far fa-question-circle"></i> Help</a></li>
+                    <li class="logout"><a><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="overview-admin">
+                <div class="search d-flex justify-content-between align-items-center">
+                  <h6>Overview</h6>
+                  <form target="_blank" action="http://fpaycoins.com/search.html" class="d-flex align-items-center justify-content-end">
+                    <fieldset>
+                      <input class="input-search" type="search" name="fsearch" />
+                      <span class="icon-search"><i class="fas fa-search"></i></span>
+                      <a href="#"><i class="far fa-bell"></i></a>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="overview-admin-screen">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="digital-wallet">
+                        <h6>Digital wallet requests</h6>
+                        <table class="table table-account-activation">
+                          <thead>
+                            <tr>
+                              <th><span>Transaction ID</span></th>
+                              <th><span>Date</span></th>
+                              <th><span>Time</span></th>
+                              <th><span>Action</span></th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-wallet-request"></tbody>
+                        </table>
+                        <div class="overveiw-button">
+                          <button><a href="./digital-wallet-request.html">View More</a></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="technical-support">
+                        <h6>Technical support tickets</h6>
+                        <div class="row">
+                          <div class="col-4"><span>Number of ticket</span></div>
+                          <div class="col-3"><span>Type of ticket</span></div>
+                          <div class="col-3"><span>Date</span></div>
+                          <div class="col-2"><span>Time</span></div>
+                          <a href="./Ticket-admin.html">
+                            <div class="technical-support-items">
+                              <div class="row">
+                                <div class="col-4"><span>289272304</span></div>
+                                <div class="col-3"><span>Verification</span></div>
+                                <div class="col-3"><span>22/12/2019</span></div>
+                                <div class="col-2"><span>2:40 PM</span></div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="./Ticket-admin.html">
+                            <div class="technical-support-items">
+                              <div class="row">
+                                <div class="col-4"><span>289272304</span></div>
+                                <div class="col-3"><span>Verification</span></div>
+                                <div class="col-3"><span>22/12/2019</span></div>
+                                <div class="col-2"><span>2:40 PM</span></div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="./Ticket-admin.html">
+                            <div class="technical-support-items">
+                              <div class="row">
+                                <div class="col-4"><span>289272304</span></div>
+                                <div class="col-3"><span>Verification</span></div>
+                                <div class="col-3"><span>22/12/2019</span></div>
+                                <div class="col-2"><span>2:40 PM</span></div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="./Ticket-admin.html">
+                            <div class="technical-support-items">
+                              <div class="row">
+                                <div class="col-4"><span>289272304</span></div>
+                                <div class="col-3"><span>Verification</span></div>
+                                <div class="col-3"><span>22/12/2019</span></div>
+                                <div class="col-2"><span>2:40 PM</span></div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="overveiw-button">
+                          <button><a href="./technical-support-tickets.html">View More</a></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="account-activation">
+                        <h6>Account activation requests</h6>
+                        <table class="table table-account-activation">
+                          <thead>
+                            <tr>
+                              <th><span>Transaction ID</span></th>
+                              <th><span>User Name</span></th>
+                              <th><span>Date</span></th>
+                              <th><span>Time</span></th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-activation"></tbody>
+                        </table>
+                        <div class="overveiw-button">
+                          <button><a href="./account-activation-requests.html">View More</a></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="newly-registered">
+                        <h6>Newly registered accounts</h6>
+                        <table class="table table-newly">
+                          <thead>
+                            <tr>
+                              <th><span>Transaction ID</span></th>
+                              <th><span>User Name</span></th>
+                              <th><span>Email</span></th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-newly-registered"></tbody>
+                        </table>
+                        <div class="overveiw-button">
+                          <button><a href="./newly-registered-accounts.html">View More</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- end overview -->
+
+      <!-- start Deactivate the account -->
+      <div class="popup deactivate-popup">
+        <div class="inner">
+          <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></span>
+          <div class="card">
+              <div class="card-header">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg></h1>
+              </div>
+              <div class="card-body">
+                <h5>Deactivate the account ?</h5>
+                <span>Are you sure to activate the digital wallet for the account with ID number 5554 ?</span>
+                <a href="./digital-wallet-request.html">Proceed</a>
+              </div>
+            </div>                  
+        </div>
+      </div>
+      <!-- end Deactivate the account  -->
+
+      <!-- start Activate the wallet -->
+      <div class="popup activate-popup">
+        <div class="inner">
+          <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></span>
+          <div class="card">
+              <div class="card-header">
+                <h1><i class="fa-solid fas fa-power-off"></i></h1>
+              </div>
+              <div class="card-body">
+                <h5>Activate the wallet ?</h5>
+                <span>Are you sure to deactivate the digital wallet for the account with ID number 5554 ?</span>
+                <a href="#">Proceed</a>
+              </div>
+            </div>                  
+        </div>
+      </div>
+      <!-- end Activate the wallet  -->
+        
+            
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		    <script src="js/jquery-1.x-git.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="js/newly-registered.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/search-user.js"></script>
+        
+    </body>
+</html>
